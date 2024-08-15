@@ -1,24 +1,41 @@
 
 
-function getComputerChoice(min, max) {
-
-    return Math.floor(Math.random() * (max - min + 1) + min);
-
-}
-
-
-let answer, result = getComputerChoice(2, 4);
-console.log(result);
-
-if (result === 2) {
-    answer = "Rock";
+function getComputerChoice() {
+    let result = Math.floor(Math.random() * (4 - 2 + 1) + 2);
+    let answer;
+    if (result === 2) {
+    answer = "rock";
 } else if (result === 3) {
-    answer = "Papper";
+    answer = "paper";
 } else if (result === 4) {
-    answer = "Scissor";
+    answer = "scissor";
 } else {
-    alert("Somthing Wrong with this code!");
+    alert("Something Wrong with this code!");
+}
+return answer;
 }
 
+function getHumanChoice() {
+    return prompt("Rock or Paper or Scissor", "").toLocaleLowerCase();
+}
 
-alert(answer);
+function playRound(humanChoice, computerChoice) {
+    // your code here!
+if 
+
+  }
+
+  
+  let answer,humanScore = 0, computerScore = 0;
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+
+  console.log(humanSelection);
+
+  
+  
+  
+  
+
+
+ 
