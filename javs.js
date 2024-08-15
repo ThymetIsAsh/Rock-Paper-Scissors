@@ -18,33 +18,35 @@ function getComputerChoice() {
 function getHumanChoice() {
     return prompt("Rock or Paper or Scissor", "").toLocaleLowerCase();
 }
+function playGame() {
 
-function playRound(humanChoice, computerChoice) {
-    // your code here!
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
     if (humanChoice === "rock" && computerChoice === "scissor" ||
         humanChoice === "paper" && computerChoice === "rock" ||
         humanChoice === "scissor" && computerChoice === "paper") {
         console.log("You win! " + humanChoice + " beats " + computerChoice);
         humanScore++;
     } else if (humanChoice === computerChoice) {
-        console.log("Tie..You Both Choose" + humanChoice)
+        console.log("Tie..You Both Choose  " + humanChoice)
     } else {
         console.log("You Loss! " + computerChoice + " beats " + humanChoice);
         computerScore++;
     }
 }
 
-function playGame(){
+let humanScore = 0, computerScore = 0;
 
+for (i = 0; i < 5; i++) {
+    playGame();
 }
 
+console.log("Final Scores - Human: " + humanScore + ", Computer: " + computerScore);
 
-let answer, humanScore = 0, computerScore = 0;
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-playRound(humanSelection, computerSelection);
 
-console.log(humanScore+" "+computerScore);
+
+
+
 
 
 
