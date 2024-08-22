@@ -15,12 +15,12 @@ function getComputerChoice() {
     return answer;
 }
 
-function getHumanChoice() {
-    return prompt("Rock or Paper or Scissor", "").toLocaleLowerCase();
-}
+// function getHumanChoice() {
+//     return prompt("Rock or Paper or Scissor", "").toLocaleLowerCase();
+// }
 function playGame() {
 
-    let humanChoice = getHumanChoice();
+    let humanChoice = userChoice;
     let computerChoice = getComputerChoice();
     if (humanChoice === "rock" && computerChoice === "scissor" ||
         humanChoice === "paper" && computerChoice === "rock" ||
@@ -35,13 +35,30 @@ function playGame() {
     }
 }
 
-let humanScore = 0, computerScore = 0;
+let humanScore = 0, computerScore = 0, userChoice;
 
-for (i = 0; i < 5; i++) {
+const rocco=document.querySelector(".rockbtn");
+const paperboy=document.querySelector(".paperbtn");
+const scissorToy=document.querySelector(".scissorbtn");
+
+rocco.addEventListener("click",()=> {
+    userChoice="rock";
     playGame();
-}
+});
 
-console.log("Final Scores - Human: " + humanScore + ", Computer: " + computerScore);
+paperboy.addEventListener("click",()=> {
+    userChoice="paper";
+    playGame();
+});
+
+scissorToy.addEventListener("click",()=> {
+    userChoice="scissor";
+    playGame();
+});
+    // playGame();
+
+
+// console.log("Final Scores - Human: " + humanScore + ", Computer: " + computerScore);
 
 
 

@@ -1,0 +1,14 @@
+div.container,.playground{
+    background-color: rgb(226, 169, 180);
+    display: flex;
+    justify-content:space-evenly ;
+
+}
+
+div.buttons{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
