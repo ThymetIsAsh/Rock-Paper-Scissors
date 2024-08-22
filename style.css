@@ -1,14 +1,58 @@
 div.container,.playground{
-    background-color: rgb(226, 169, 180);
+    background-color:#588157;
     display: flex;
     justify-content:space-evenly ;
 
 }
 
 div.buttons{
-    background-color: bisque;
+    background-color: #dad7cd;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
 
+}
+h1.resulth1,.resulth2{
+    background-color: #dad7cd;
+    color: #3a5a40;
+    display: flex;
+    justify-content: center;
+}
+
+div.reset{
+    display: flex;
+    justify-content: center;
+    margin-top:15PX ;
+    background-color: #dad7cd;
+}
+
+.resett,.rockbtn,.paperbtn,.scissorbtn{
+background-color: #344e41;
+color: #dad7cd;
+font-size: 20px;
+font-weight: bold;
+padding: 5px;
+border-radius: 1rem;
+
+
+}
+
+body{
+    background-color: #dad7cd;
+    margin: 0;
+    padding: auto;
+    list-style: none;
+    
+}
+
+h1{
+    background-color: #344e41;
+    color: #dad7cd;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.userscore,.user,.computerscore,.computer{
+    color:#dad7cd;
 }
